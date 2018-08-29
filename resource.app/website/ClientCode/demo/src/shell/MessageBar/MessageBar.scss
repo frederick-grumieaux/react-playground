@@ -1,0 +1,24 @@
+﻿div.app-shell-comp-messagebar {
+    background-color: lightblue;
+    font-family: Consolas;
+    margin: 0;
+    padding: 0.2em;
+    border: 2px solid;
+    border-color: cornflowerblue;
+
+    &.empty{
+        display: none;
+    }
+
+    .theMessage { }
+    .right { 
+        float: right;
+        padding: 0.2em;
+        margin: 0;
+        &:hover{
+            font-style:oblique;
+            background-color: black;
+            cursor: pointer;
+        }
+    }
+}

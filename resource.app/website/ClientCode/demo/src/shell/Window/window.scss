@@ -1,0 +1,46 @@
+section.shell-window {
+    min-width: 15em;
+    min-height: 15em;
+    border: solid 1px black;
+    margin:2px;
+    padding:0;
+
+    >header{
+        background-color: gray;
+        color: white;
+        font-size: large;
+        border-bottom: 3px double black;
+
+
+
+        width: 100%;
+        >span {float:left;}
+        >button { 
+            float:right; 
+            background-color: transparent;
+            border:none;
+            cursor: pointer;
+        }
+        >div.toolbar {
+            float: right;
+
+            .pendingMessages {
+                margin: 0.1em;
+                padding: 0.1em;
+                border: 1px solid black;
+                border-radius: 0.5em;
+            }
+        }
+        >div.messages {
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            clear:both;
+        }
+    }
+    >main{
+        overflow: hidden;
+        background-color: lightblue;
+        color: black;
+        font-size: medium;
+    }
+}

@@ -1,0 +1,18 @@
+div.renderfailure {
+    background-color: orange;
+    color: red;
+    font-size: medium;
+    font-weight:bold;
+    position: center;
+    text-align: center;
+    border: 0.4em solid red;
+    cursor: pointer;
+
+    &.rootcause {
+        border-style: dashed;
+    }
+
+    &:hover {
+        background-color: white;
+    }
+}

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClientCode\src\demo\**" />
+    <Content Remove="ClientCode\src\demo\**" />
+    <EmbeddedResource Remove="ClientCode\src\demo\**" />
+    <None Remove="ClientCode\src\demo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientCode\demo\src\shell\ctx\MessageContext.js" />
+    <None Remove="ClientCode\src\app.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="ClientCode\demo\src\shell\ctx\MessageContext.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientCode\libs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\resource.app\resource.app.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientCode\src\app.tsx" />
+  </ItemGroup>
+
+</Project>

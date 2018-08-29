@@ -1,0 +1,35 @@
+section.shell-window {
+  min-width: 15em;
+  min-height: 15em;
+  border: solid 1px black;
+  margin: 2px;
+  padding: 0; }
+  section.shell-window > header {
+    background-color: gray;
+    color: white;
+    font-size: large;
+    border-bottom: 3px double black;
+    width: 100%; }
+    section.shell-window > header > span {
+      float: left; }
+    section.shell-window > header > button {
+      float: right;
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+    section.shell-window > header > div.toolbar {
+      float: right; }
+      section.shell-window > header > div.toolbar .pendingMessages {
+        margin: 0.1em;
+        padding: 0.1em;
+        border: 1px solid black;
+        border-radius: 0.5em; }
+    section.shell-window > header > div.messages {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      clear: both; }
+  section.shell-window > main {
+    overflow: hidden;
+    background-color: lightblue;
+    color: black;
+    font-size: medium; }

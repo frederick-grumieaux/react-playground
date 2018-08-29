@@ -1,0 +1,36 @@
+header.app-shell-comp-menubar {
+  width: 100%;
+  height: 3em;
+  background-color: darkgray;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  font-family: Consolas; }
+  header.app-shell-comp-menubar ul {
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    header.app-shell-comp-menubar ul li:hover {
+      background-color: white;
+      color: black;
+      text-decoration: underline wavy;
+      cursor: pointer; }
+    header.app-shell-comp-menubar ul li {
+      float: left;
+      height: 100%;
+      min-width: 7em;
+      font-size: larger; }
+    header.app-shell-comp-menubar ul div.center-outter-box {
+      width: 100%;
+      height: 100%;
+      display: table; }
+      header.app-shell-comp-menubar ul div.center-outter-box > .center-inner-box {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; }
+  header.app-shell-comp-menubar .left {
+    float: left; }
+  header.app-shell-comp-menubar .right {
+    float: right; }

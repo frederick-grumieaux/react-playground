@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "checkJs": true,
+    "disableSizeLimit": true,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "jsx": "react",
+
+    "module": "es6",
+    "moduleResolution": "node",
+    "baseUrl": "../src",
+    //"paths": {
+    //   "module" : ["../compile/node_modules/*" ]
+    //},
+    "rootDir": "../src",
+    "rootDirs": [ "../compile/node_modules/", "../compile/node_modules/react"],
+    //"typeRoots": ["../compile/node_modules/@types"]
+    
+  },
+  "include": [
+    "../src/**/*"
+  ],
+  //"exclude": [
+  //  "../compile/node_modules/**/*"
+  //]
+}
